@@ -1,4 +1,4 @@
-(defproject riddley "0.2.0"
+(defproject riddley "0.2.1"
   :description "code-walking without caveats"
   :license {:name "MIT License"
             :url "http://opensource.org/licenses/MIT"}
@@ -10,5 +10,5 @@
           :include [riddley.walk riddley.compiler]
           :output-dir "doc"}
   :profiles {:provided {:dependencies [[org.clojure/clojure "1.8.0"]]}}
-  :java-source-paths ["src/riddley"]
-  :javac-options ["-target" "8" "-source" "8"])
+  :java-source-paths ["src"]
+  :javac-options ["-target" "1.8" "-source" "1.8"])
