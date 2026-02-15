@@ -1,7 +1,9 @@
 (ns riddley.compiler)
 
+(def ^:private bb? (System/getProperty "babashka.version"))
+
 (defmacro if-bb [then else]
-  (if (System/getProperty "babashka.version") then else))
+  (if bb? then else))
 
 ;; JVM-only imports
 (if-bb nil
